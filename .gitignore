@@ -22,7 +22,10 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 *.iml
-java/day-two/.gradle
-java/day-two/build
-java/day-two/gradlew*
-java/day-two/gradle
+
+
+# Build artifacts
+.gradle
+gradlew*
+gradle
+build
