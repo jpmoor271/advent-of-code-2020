@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id "io.freefair.lombok" version "5.3.0"
+}
+
+group 'org.mooredom'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation "org.junit.jupiter:junit-jupiter-api:5.7.0"
+    testImplementation "org.hamcrest:hamcrest:2.+"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.7.0"
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.+'
+    testCompile "org.mockito:mockito-core:3.+"
+    testCompile "org.mockito:mockito-junit-jupiter:2.+"
+    testCompile "org.junit.jupiter:junit-jupiter-params:5.7.0"
+}
+
+test {
+    useJUnitPlatform()
+}
